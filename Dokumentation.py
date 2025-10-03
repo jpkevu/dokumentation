@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Titel
-st.title("Dokumentation af fremskrivningsmodel for elektriker- og vvs-energiuddannelsen")
+st.title("Dokumentation af fremskrivningsmodel for elektrikeruddannelsen")
 
 # Formål
 st.header("Formål")
