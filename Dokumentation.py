@@ -6,7 +6,7 @@ st.title("Dokumentation af fremskrivningsmodel for elektriker- og vvs-energiudda
 # Formål
 st.header("Formål")
 st.write("""
-Formålet med modellen er at fremskrive tilgang, frafald og bestand på elektriker- og vvs-energiuddannelsen frem til 2036, 
+Formålet med modellen er at fremskrive tilgang, frafald og bestand på elektrikeruddannelsen frem til 2036, 
 baseret på historiske data, befolkningsfremskrivninger og en række metodiske antagelser.
 
 Derudover indgår flere scenarier, der tager højde for den forventede indførelse af EPX (Erhvervsparat X) fra 2030, 
@@ -18,13 +18,10 @@ st.header("Datagrundlag")
 st.write("""
 - **Befolkningstal (FOLK2_filtered.xlsx):** Befolkning fordelt på aldersgrupper. Fremskrivningsdata fra Danmarks Statistik.
 - **Tilgang til GF2 elektriker (Tilgang_GF2_elektriker.xlsx):** Antal elever, der starter på GF2 elektrikeruddannelsen.
-- **Tilgang til GF2 vvs (Tilgang_GF2_vvs.xlsx):** Antal elever, der starter på GF2 vvs-energiuddannelsen
 - **Tilgang til GF2 samlet (Tilgang_GF2.xlsx):** Samlet antal GF2-elever.
 - **Bestand elektriker (bestand_elektriker.xlsx):** Historisk bestand af elever på elektrikeruddannelsen.
-- **Bestand vvs (bestand_vvs.xlsx):** Historisk bestand af elever på vvs-energiuddannelsen
 - **Bestand total (bestand_total.xlsx):** Samlet bestand af GF2-elever.
 - **Frafaldsandele elektriker (frafald_andele.xlsx):** Historiske frafaldsandele på elektrikeruddannelsen.
-- **Frafaldsandele vvs (frafald_andele_vvs.xlsx):** Historiske frafaldsandele på vvs-energiuddannelsen
 Dækning: 2016-2024 (Befolkningstal 2016-2036)
 Aldersgrupper: 15-17 år, 18-19 år, 20-24 år, 25+ år
 """)
