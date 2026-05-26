@@ -37,18 +37,17 @@ st.write("""
 
 st.subheader("2. Frafaldsandele")
 st.write("""
-- Frafaldet er fremskrevet med en glidende gennemsnitsmodel med et vindue på 5 år.
-- Hvis færre end 5 observationer er til rådighed, anvendes gennemsnittet af de tilgængelige værdier.
-- Metoden giver en stabil udvikling, hvor udsving udjævnes, men hvor nye strukturelle ændringer ikke indfanges.
+- Frafald er ikke modelleret separat i fremskrivningen.
+- Der anvendes i stedet en fast antagelse om, at 37% af en elevkohorte falder fra i løbet af uddannelsesforløbet baseret på DEAs analyse af vvs-energi og elektrikeruddannelserne.
+- Det betyder, at 63% af en tilgangsårgang indgår i den fremtidige bestand.
 """)
 
 st.subheader("3. Bestand af elektriker-elever")
 st.write("""
-- For hver aldersgruppe er beregnet to historiske andele:
-    - Elektrikerbestand ift. totalbestand
-    - Elektrikerbestand ift. befolkning
-- Begge andele fremskrives med lineær trend.
-- Resultatet beregnes som vægtet gennemsnit af de to trends, multipliceret med hhv. totalbestand og befolkningstal.
+- Bestanden af elektriker-elever beregnes ud fra tidligere års tilgang til uddannelsen.
+- Hver tilgangsårgang følges over tid i en 4-årig kohortemodel.
+- Der anvendes en fast antagelse om, at 37% falder fra i løbet af uddannelsesforløbet.
+- Bestanden i et givent år er summen af de seneste års tilgange, fordelt på aldersgrupper og reduceret for frafald.
 """)
 
 # EPX-scenarier
